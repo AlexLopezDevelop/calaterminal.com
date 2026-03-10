@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ====== PRIMARY SEO ====== -->
+<title>Terms of Service — Cala Terminal</title>
+<meta name="description" content="Terms of Service for Cala Terminal by A2GROUP. Read the terms governing your use of the Platform.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://calaterminal.com/terms">
+<meta name="author" content="Cala Terminal">
+<meta name="theme-color" content="#09090b">
+<meta name="color-scheme" content="dark">
+
+<!-- ====== OPEN GRAPH ====== -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cala Terminal">
+<meta property="og:title" content="Terms of Service — Cala Terminal">
+<meta property="og:description" content="Terms of Service for Cala Terminal by A2GROUP. Read the terms governing your use of the Platform.">
+<meta property="og:url" content="https://calaterminal.com/terms">
+<meta property="og:image" content="https://calaterminal.com/og-image.png">
+
+<!-- ====== FAVICON ====== -->
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- ====== FONTS ====== -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..700&family=Anybody:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..400&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* === DESIGN TOKENS v2.0 === */
+:root {
+  --bg-void: #09090b;
+  --bg-surface: #111113;
+  --bg-card: #19191d;
+  --bg-elevated: #232328;
+  --bg-hover: #2a2a30;
+  --border-subtle: #1e1e23;
+  --border-default: #27272d;
+  --border-strong: #3a3a42;
+  --text-primary: #fafaf9;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
+  --text-dim: #3f3f46;
+  --accent-gold: #d4a847;
+  --accent-gold-hover: #e0b85a;
+  --accent-gold-muted: rgba(212, 168, 71, 0.15);
+  --accent-champagne: #e8d5a3;
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* === RESET & BASE === */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body {
+  background: var(--bg-void);
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--accent-gold-hover); }
+:focus-visible { outline: 2px solid var(--accent-gold); outline-offset: 2px; }
+
+/* === NAV === */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(9, 9, 11, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+a.nav-logo, a.nav-logo:hover, .nav-logo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  text-decoration: none;
+}
+.nav-logo .bold { font-weight: 700; font-style: italic; }
+.nav-logo .light { font-weight: 300; font-style: italic; color: var(--text-muted); }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text-primary); }
+.nav-cta {
+  background: var(--accent-gold) !important;
+  color: var(--bg-void) !important;
+  font-weight: 700 !important;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px !important;
+  transition: background 0.2s, transform 0.15s !important;
+}
+.nav-cta:hover {
+  background: var(--accent-gold-hover) !important;
+  color: var(--bg-void) !important;
+  transform: translateY(-1px);
+}
+
+/* === POLICY CONTENT === */
+.policy-header {
+  padding: 140px 24px 60px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.policy-header .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 16px;
+}
+.policy-header h1 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 700;
+  font-size: clamp(36px, 5vw, 56px);
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.policy-header .meta {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-muted);
+}
+.policy-header .meta strong {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.policy-body {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+}
+
+.policy-body .intro {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.policy-section {
+  margin-bottom: 48px;
+}
+
+.policy-section h2 {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.policy-section h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--accent-champagne);
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.policy-section p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.policy-section ul {
+  list-style: none;
+  margin: 12px 0 20px 0;
+  padding: 0;
+}
+
+.policy-section ul li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.policy-section ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  opacity: 0.6;
+}
+
+.policy-section .email-link {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--accent-gold);
+  background: var(--accent-gold-muted);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.policy-section .highlight-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-left: 3px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin: 20px 0;
+}
+
+.policy-section .highlight-box p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.policy-section .legal-caps {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 48px 0;
+}
+
+/* === TOC === */
+.toc {
+  background: var(--bg-card);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  padding: 28px 32px;
+  margin-bottom: 48px;
+}
+.toc-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  margin-bottom: 16px;
+}
+.toc ol {
+  list-style: none;
+  counter-reset: toc;
+  margin: 0;
+  padding: 0;
+}
+.toc ol li {
+  counter-increment: toc;
+  margin-bottom: 8px;
+}
+.toc ol li a {
+  font-size: 14px;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  transition: color 0.2s;
+}
+.toc ol li a::before {
+  content: counter(toc, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+  min-width: 20px;
+}
+.toc ol li a:hover { color: var(--accent-gold); }
+
+/* === FOOTER === */
+.footer {
+  border-top: 1px solid var(--border-subtle);
+  padding: 40px 24px;
+  text-align: center;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+a.footer-logo, a.footer-logo:hover, .footer-logo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  text-decoration: none;
+}
+.footer-logo .bold { font-weight: 700; font-style: italic; }
+.footer-logo .light { font-weight: 300; font-style: italic; color: var(--text-muted); }
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-links a {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--text-secondary); }
+.footer-copy {
+  font-size: 12px;
+  color: var(--text-dim);
+}
+.footer-copy a {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .policy-header { padding: 120px 20px 40px; }
+  .policy-body { padding: 40px 20px 80px; }
+  .toc { padding: 20px 24px; }
+  .policy-section h2 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Cala Terminal — Home">
+      <span class="bold">Cala</span><span class="light">Terminal</span>
+    </a>
+    <div class="nav-links" role="menubar">
+      <a href="/#ai" role="menuitem">AI Engine</a>
+      <a href="/#data" role="menuitem">Data</a>
+      <a href="/#coverage" role="menuitem">Coverage</a>
+      <a href="/#compare" role="menuitem">Compare</a>
+      <a href="/#pricing" role="menuitem">Pricing</a>
+      <a href="/#start" class="nav-cta" role="menuitem">Start Free <span aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ====== HEADER ====== -->
+<header class="policy-header">
+  <p class="eyebrow">Legal</p>
+  <h1>Terms of Service</h1>
+  <p class="meta">Cala Terminal &mdash; <strong>A2GROUP</strong><br>Effective: January 1, 2025 &nbsp;|&nbsp; Last updated: March 10, 2026</p>
+</header>
+
+<!-- ====== BODY ====== -->
+<div class="policy-body">
+
+  <p class="intro">
+    These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of Cala Terminal, including our web application, desktop app, mobile apps, and TV apps (collectively, the &ldquo;Platform&rdquo;), operated by A2GROUP (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). By creating an account or using the Platform, you agree to be bound by these Terms. If you do not agree, do not use the Platform.
+  </p>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#eligibility">Eligibility</a></li>
+      <li><a href="#account">Account Registration</a></li>
+      <li><a href="#billing">Subscriptions and Billing</a></li>
+      <li><a href="#acceptable-use">Acceptable Use</a></li>
+      <li><a href="#no-advice">Financial Data and No Investment Advice</a></li>
+      <li><a href="#politician">Politician Trade Data</a></li>
+      <li><a href="#ip">Intellectual Property</a></li>
+      <li><a href="#warranties">Disclaimer of Warranties</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#indemnification">Indemnification</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#changes">Changes to the Terms</a></li>
+      <li><a href="#governing-law">Governing Law and Disputes</a></li>
+      <li><a href="#miscellaneous">Miscellaneous</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1 -->
+  <section class="policy-section" id="eligibility">
+    <h2>1. Eligibility</h2>
+    <p>You must be at least 18 years old to use the Platform. By using the Platform, you represent that you meet this requirement. If you are using the Platform on behalf of a company or organization, you represent that you have the authority to bind that entity to these Terms.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 2 -->
+  <section class="policy-section" id="account">
+    <h2>2. Account Registration</h2>
+    <p>To access most features, you must create an account. You agree to:</p>
+    <ul>
+      <li>Provide accurate, current, and complete information during registration.</li>
+      <li>Maintain the security of your password and notify us immediately at <a href="mailto:contact@a2group.llc" class="email-link">contact@a2group.llc</a> of any unauthorized access.</li>
+      <li>Be solely responsible for all activity that occurs under your account.</li>
+    </ul>
+    <p>We reserve the right to suspend or terminate accounts that violate these Terms or that we reasonably believe are being used fraudulently.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 3 -->
+  <section class="policy-section" id="billing">
+    <h2>3. Subscriptions and Billing</h2>
+
+    <h3>3.1 Subscription Tiers</h3>
+    <p>The Platform is offered on a freemium model. Paid tiers (Pro, Trader, Advisor, Fund) are billed monthly or annually as selected at checkout. Features available at each tier are described on our pricing page and are subject to change with notice.</p>
+
+    <h3>3.2 Billing</h3>
+    <p>By subscribing to a paid tier, you authorize us to charge your payment method on a recurring basis. All fees are in US dollars and are exclusive of applicable taxes.</p>
+
+    <h3>3.3 Free Trial</h3>
+    <p>If we offer a free trial, your subscription will automatically convert to a paid subscription at the end of the trial period unless you cancel before that date.</p>
+
+    <h3>3.4 Cancellation and Refunds</h3>
+    <p>You may cancel your subscription at any time from account settings. Cancellation takes effect at the end of the current billing period &mdash; you retain access until then. We do not provide refunds for partial billing periods. If you experience a material service failure, contact <a href="mailto:contact@a2group.llc" class="email-link">contact@a2group.llc</a> and we will evaluate your case.</p>
+
+    <h3>3.5 Price Changes</h3>
+    <p>We may change subscription prices with 30 days advance notice. Continued use after the effective date constitutes acceptance of the new price.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 4 -->
+  <section class="policy-section" id="acceptable-use">
+    <h2>4. Acceptable Use</h2>
+    <p>You agree to use the Platform only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+    <ul>
+      <li>Use the Platform to engage in insider trading or any activity that violates applicable securities laws.</li>
+      <li>Redistribute, resell, or sublicense market data received through the Platform.</li>
+      <li>Scrape, crawl, or systematically extract data from the Platform beyond what is provided by official API access.</li>
+      <li>Attempt to reverse-engineer, decompile, or disassemble any component of the Platform.</li>
+      <li>Use the Platform to harass, harm, or deceive other users or third parties.</li>
+      <li>Attempt to gain unauthorized access to the Platform, its servers, or any connected systems.</li>
+      <li>Upload malicious code or interfere with the Platform&rsquo;s operation.</li>
+      <li>Circumvent usage limits, rate limits, or access controls.</li>
+    </ul>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 5 -->
+  <section class="policy-section" id="no-advice">
+    <h2>5. Financial Data and No Investment Advice</h2>
+
+    <h3>5.1 Informational Purposes Only</h3>
+    <div class="highlight-box">
+      <p>All market data, analysis, AI-generated commentary, technical indicators, analyst ratings, and other content provided through the Platform is for <strong>informational and educational purposes only</strong>. It does not constitute financial, investment, legal, or tax advice.</p>
+    </div>
+
+    <h3>5.2 No Reliance</h3>
+    <p>You acknowledge that investment decisions involve significant risk, including the potential loss of principal. You should not make investment decisions based solely on information provided by the Platform. You should consult a qualified financial advisor before making investment decisions.</p>
+
+    <h3>5.3 Data Accuracy</h3>
+    <p>While we strive to provide accurate, real-time data sourced from verified providers (Alpaca, Polygon, Financial Modeling Prep), we do not guarantee the accuracy, completeness, timeliness, or fitness for purpose of any data. Market data is subject to delays, errors, and interruptions beyond our control.</p>
+
+    <h3>5.4 AI Limitations</h3>
+    <p>The AI assistant is designed to minimize hallucination by fetching data from verified APIs rather than generating it. However, AI systems can produce errors. You are responsible for independently verifying any information before acting on it.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 6 -->
+  <section class="policy-section" id="politician">
+    <h2>6. Politician Trade Data</h2>
+    <p>The Platform displays publicly reported congressional trade disclosures as filed under the STOCK Act. This data is sourced from official public records. It reflects disclosed transactions and is provided for informational purposes only. We make no representation that disclosed trades indicate any impropriety or constitute investment signals.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 7 -->
+  <section class="policy-section" id="ip">
+    <h2>7. Intellectual Property</h2>
+
+    <h3>7.1 Our Content</h3>
+    <p>The Platform, including its software, design, AI models, data pipelines, and all content we create, is owned by A2GROUP and protected by intellectual property laws. You are granted a limited, non-exclusive, non-transferable license to access and use the Platform for your personal or internal business purposes.</p>
+
+    <h3>7.2 Your Content</h3>
+    <p>You retain ownership of data you provide to the Platform (portfolio data, watchlists, preferences). You grant us a limited license to use this data solely to provide and improve the Platform.</p>
+
+    <h3>7.3 Third-Party Data</h3>
+    <p>Market data provided through the Platform is licensed from third-party data providers. Your use of this data is subject to their terms and may not be redistributed or used for commercial purposes outside the Platform.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 8 -->
+  <section class="policy-section" id="warranties">
+    <h2>8. Disclaimer of Warranties</h2>
+    <p class="legal-caps">The Platform is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, express or implied, including warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the Platform will be uninterrupted, error-free, or free of harmful components.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 9 -->
+  <section class="policy-section" id="liability">
+    <h2>9. Limitation of Liability</h2>
+    <p class="legal-caps">To the maximum extent permitted by law, A2GROUP shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the Platform, including financial losses resulting from investment decisions made using Platform data or AI analysis. Our total liability to you for any claim shall not exceed the amount you paid to us in the 12 months preceding the claim.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 10 -->
+  <section class="policy-section" id="indemnification">
+    <h2>10. Indemnification</h2>
+    <p>You agree to indemnify and hold harmless A2GROUP and its officers, employees, and agents from any claims, damages, or expenses (including reasonable attorneys&rsquo; fees) arising from your use of the Platform, your violation of these Terms, or your violation of any third-party rights.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 11 -->
+  <section class="policy-section" id="termination">
+    <h2>11. Termination</h2>
+    <p>We may suspend or terminate your access to the Platform at any time for violation of these Terms, suspected fraud, or any other reason with reasonable notice. Upon termination, your right to use the Platform ceases. Provisions that by their nature should survive termination (including Sections 5, 7, 8, 9, 10, and 13) will do so.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 12 -->
+  <section class="policy-section" id="changes">
+    <h2>12. Changes to the Terms</h2>
+    <p>We may update these Terms periodically. When we do, we will update the &ldquo;Last updated&rdquo; date and notify you by email if the changes are material. Continued use of the Platform after the effective date constitutes acceptance of the updated Terms.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 13 -->
+  <section class="policy-section" id="governing-law">
+    <h2>13. Governing Law and Disputes</h2>
+    <p>These Terms are governed by the laws of the State of Delaware, United States, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the Platform shall be resolved through binding arbitration under the rules of the American Arbitration Association, except that either party may seek injunctive relief in a court of competent jurisdiction.</p>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 14 -->
+  <section class="policy-section" id="miscellaneous">
+    <h2>14. Miscellaneous</h2>
+    <ul>
+      <li><strong>Entire Agreement:</strong> These Terms and the <a href="/privacy-policy">Privacy Policy</a> constitute the entire agreement between you and A2GROUP regarding the Platform.</li>
+      <li><strong>Severability:</strong> If any provision of these Terms is found unenforceable, the remaining provisions remain in full effect.</li>
+      <li><strong>No Waiver:</strong> Our failure to enforce any right or provision does not constitute a waiver of that right.</li>
+      <li><strong>Assignment:</strong> You may not assign your rights under these Terms. We may assign ours in connection with a merger or acquisition.</li>
+    </ul>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- SECTION 15 -->
+  <section class="policy-section" id="contact">
+    <h2>15. Contact</h2>
+    <p>For questions about these Terms:</p>
+    <p><a href="mailto:contact@a2group.llc" class="email-link">contact@a2group.llc</a></p>
+    <p style="margin-top: 8px; color: var(--text-muted); font-size: 14px;">A2GROUP &mdash; Cala Terminal</p>
+  </section>
+
+</div>
+
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <a href="/" class="footer-logo" aria-label="Cala Terminal home">
+      <span class="bold">Cala</span> <span class="light">Terminal</span>
+    </a>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/privacy-policy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/docs">Docs</a>
+      <a href="/api">API</a>
+      <a href="/blog">Blog</a>
+      <a href="https://twitter.com/calaterminal" rel="noopener noreferrer" target="_blank">Twitter</a>
+      <a href="https://discord.gg/calaterminal" rel="noopener noreferrer" target="_blank">Discord</a>
+    </nav>
+    <p class="footer-copy">A product by <a href="https://a2group.llc" target="_blank" rel="noopener">A2GROUP</a> &middot; &copy; 2026 Cala Terminal.</p>
+  </div>
+</footer>
+
+</body>
+</html>
