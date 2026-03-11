@@ -524,37 +524,27 @@ a.nav-logo, a.nav-logo:hover,
 .device-frame.macbook .screen {
   position: absolute;
   top: 3.3%;
-  left: 11.8%;
-  width: 76.4%;
-  height: 64.5%;
+  left: 11.5%;
+  width: 77%;
+  height: 83.5%;
   object-fit: cover;
   object-position: top left;
   z-index: 1;
-  border-radius: 4px;
-}
-/* iPad portrait screen area */
-.device-frame.ipad .screen {
-  position: absolute;
-  top: 4.2%;
-  left: 5.5%;
-  width: 89%;
-  height: 91.5%;
-  object-fit: cover;
-  object-position: top left;
-  z-index: 1;
-  border-radius: 12px;
+  border-radius: 6px;
+  clip-path: inset(0 0 0 0 round 6px);
 }
 /* iPad landscape screen area */
 .device-frame.ipad-landscape .screen {
   position: absolute;
-  top: 5.5%;
-  left: 4.2%;
-  width: 91.5%;
-  height: 89%;
+  top: 3.4%;
+  left: 2.3%;
+  width: 95.2%;
+  height: 93.5%;
   object-fit: cover;
   object-position: top left;
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 14px;
+  clip-path: inset(0 0 0 0 round 14px);
 }
 
 /* === SECTION SPACING === */
@@ -1533,9 +1523,9 @@ a.footer-logo, a.footer-logo:hover,
       </div>
 
       <div>
-        <div class="device-frame ipad">
+        <div class="device-frame ipad-landscape">
           <img class="screen" src="/screenshots/technicals.png" alt="Technical analysis view showing RSI, MACD, Bollinger Bands, financials, and dividend history for a stock" width="2388" height="1668" loading="lazy">
-          <img class="frame" src="/mockup-ipad.png" alt="" role="presentation" width="1890" height="2610" loading="lazy">
+          <img class="frame" src="/mockup-ipad-landscape.png" alt="" role="presentation" width="2610" height="1890" loading="lazy">
         </div>
       </div>
     </div>
@@ -1573,9 +1563,9 @@ a.footer-logo, a.footer-logo:hover,
       </div>
 
       <div>
-        <div class="device-frame ipad">
+        <div class="device-frame ipad-landscape">
           <img class="screen" src="/screenshots/portfolio-risk.png" alt="Portfolio risk metrics panel showing Sharpe ratio, Sortino ratio, max drawdown, benchmark comparison chart, and sector allocation" width="2388" height="1668" loading="lazy">
-          <img class="frame" src="/mockup-ipad.png" alt="" role="presentation" width="1890" height="2610" loading="lazy">
+          <img class="frame" src="/mockup-ipad-landscape.png" alt="" role="presentation" width="2610" height="1890" loading="lazy">
         </div>
       </div>
     </div>
@@ -1630,9 +1620,9 @@ a.footer-logo, a.footer-logo:hover,
       </div>
 
       <div>
-        <div class="device-frame ipad">
+        <div class="device-frame ipad-landscape">
           <img class="screen" src="/screenshots/news.png" alt="News feed with politician trades section showing Senate and House stock transactions, disclosure dates, and AI sentiment-scored articles" width="2388" height="1668" loading="lazy">
-          <img class="frame" src="/mockup-ipad.png" alt="" role="presentation" width="1890" height="2610" loading="lazy">
+          <img class="frame" src="/mockup-ipad-landscape.png" alt="" role="presentation" width="2610" height="1890" loading="lazy">
         </div>
       </div>
     </div>
