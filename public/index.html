@@ -513,6 +513,7 @@ a.nav-logo, a.nav-logo:hover,
   position: relative;
   display: inline-block;
   width: 100%;
+  overflow: hidden;
 }
 .device-frame .frame {
   width: 100%;
@@ -523,15 +524,14 @@ a.nav-logo, a.nav-logo:hover,
 /* MacBook screen area */
 .device-frame.macbook .screen {
   position: absolute;
-  top: 3.3%;
-  left: 11.5%;
-  width: 77%;
-  height: 83.5%;
+  top: 3.5%;
+  left: 12%;
+  width: 76%;
+  height: 82.5%;
   object-fit: cover;
   object-position: top left;
   z-index: 1;
   border-radius: 6px;
-  clip-path: inset(0 0 0 0 round 6px);
 }
 /* iPad landscape screen area */
 .device-frame.ipad-landscape .screen {
