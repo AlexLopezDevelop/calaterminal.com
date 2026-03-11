@@ -524,12 +524,13 @@ a.nav-logo, a.nav-logo:hover,
 /* MacBook screen area */
 .device-frame.macbook .screen {
   position: absolute;
-  top: 3.5%;
-  left: 12%;
-  width: 76%;
-  height: 82.5%;
-  object-fit: cover;
-  object-position: top left;
+  top: 4%;
+  left: 13%;
+  width: 74%;
+  height: 80%;
+  object-fit: contain;
+  object-position: top center;
+  background: #0b0b0d;
   z-index: 1;
   border-radius: 6px;
 }
@@ -1381,12 +1382,9 @@ a.footer-logo, a.footer-logo:hover,
     </div>
   </div>
 
-  <!-- Hero MacBook mockup -->
+  <!-- Hero MacBook mockup (pre-composited) -->
   <div class="hero-mockup reveal reveal-delay-3">
-    <div class="device-frame macbook">
-      <img class="screen" src="/screenshots/mac/mac-dashboard.png" alt="Cala Terminal dashboard showing market indices, top stocks, crypto prices, commodities, AI market insights, and VIX gauge" width="3608" height="2268" loading="eager">
-      <img class="frame" src="/mockup-macbook.png" alt="" role="presentation" width="4340" height="2860" loading="eager">
-    </div>
+    <img src="/hero-macbook.png" alt="Cala Terminal dashboard inside a MacBook Pro showing market indices, top stocks, crypto prices, commodities, AI market insights, and VIX gauge" width="4340" height="2860" loading="eager" style="width:100%;height:auto;">
   </div>
 
   <!-- Ticker Tape -->
@@ -1581,8 +1579,8 @@ a.footer-logo, a.footer-logo:hover,
       <p class="section-subtitle reveal reveal-delay-2" style="margin:0 auto;">Open unlimited panels simultaneously. Dashboard + stock chart + forex + crypto — all live, all docked side by side.</p>
     </div>
 
-    <div class="fullwidth-screenshot reveal reveal-delay-3" style="margin-top:48px;">
-      <img src="/screenshots/mac/mac-multiwindow.png" alt="Cala Terminal multi-window workspace showing four docked panels: dashboard with market overview, AAPL stock analysis, EUR/USD forex chart, and Bitcoin crypto chart, with AI chat panel on the right" width="2568" height="1352" loading="lazy">
+    <div class="reveal reveal-delay-3" style="margin-top:48px;max-width:1100px;margin-left:auto;margin-right:auto;">
+      <img src="/multiwindow-macbook.png" alt="Cala Terminal multi-window workspace inside a MacBook Pro showing four docked panels: dashboard, AAPL stock analysis, EUR/USD forex chart, and Bitcoin crypto chart" width="4340" height="2860" loading="lazy" style="width:100%;height:auto;">
     </div>
   </div>
 </section>
